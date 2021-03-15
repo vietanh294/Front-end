@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="logo" height="80px" width="80 px">
+        <h3>Học viện đào tạo công nghệ</h3>
+        <nav>
+            <a href="./BTVN.htm">Giới thiệu trung tâm</a> <br>
+            <a target="self" href="./Register.htm">Đăng ký học tập</a>
+        </nav>
+
+
+    </header>
+    <main>
+        <hr>
+        <div id="Giới thiệu">
+        <h1>PlusPlus Academy</h1>
+        <p>Plus Plus Academy tập trung mạnh đào tạo lập trình học máy (AI, Machine learning), web front end, back end (Java Sping), di động (iOS, React Native, Android), và phân tích dữ liệu với Python.</p>
+        <h2>Đăng ký khóa học của trung tâm</h2>
+        </div>
+
+        <div>
+        <fieldset>
+            <legend>Đăng ký khóa học</legend>
+            <label for="hoten">Họ và tên</label>
+            <input type="text" id="hoten"> <br>
+            <label for="matkhau">Mật khẩu</label>
+            
+            <input type="password" id="matkhau"><br>
+
+            <label for="age">Tuổi</label>
+
+             <input type="number" id="age" min="0"><br>
+             <b>Giới tính</b> 
+             <label for="male">Nam</label>
+             <input type="radio" name="gender" id="male">
+             <label for="female">Nữ</label>
+             <input type="radio" name="gender" id="female">
+             <label for="other">Khác</label>
+             <input type="radio" name="gender" id="other"> <br>
+
+             <label for="ngaysinh">Ngày sinh</label>
+             <input type="date" id="ngaysinh"> <br>
+             <label for="email">Email</label>
+             <input type="email" id="email" ><br>
+
+             <label for="list2"> Danh sách khóa học </label>
+               <select name="list2  " id="list" >
+                   <option value="Frontend">Frontend</option>
+                   <option value="Backend">Backend</option>
+                   <option value="DB">DB</option>
+               </select>
+        
+    </fieldset>
+</div>
+        <hr>
+        <br>
+        <div>
+            <h2>Bạn biết đến trung tâm chúng tôi từ đâu</h2>
+            <input type="checkbox" id="quabanbe">
+            <label for="quabanbe">Qua Bạn bè</label> <br>
+            <input type="checkbox" id="quaFB">
+            <label for="quaFB">Qua Facebook</label> <br>
+            <input type="checkbox" id="quaNVTV">
+            <label for="quaNVTV">Qua Nhân viên tư vấn</label>
+
+        </div>
+        <hr>
+       <div>
+           <h2>Đánh giá trung tâm</h2>
+           <label for="comment">Đánh giá</label> <br>
+           <textarea name="cmt" id="commment" cols="30" rows="10">TỐt</textarea>
+
+       </div>
+
+
+       
+    <hr>
+    </main>
+    <footer>
+        <img src="./logo.png" alt="Logo" height="80px" width="80px">
+
+        <p>Số 11 phố Phạm Ngọc Thạch Hà Nội</p>
+    </footer>
+</body>
+</html>
