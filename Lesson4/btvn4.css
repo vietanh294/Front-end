@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    background-color: rgb(101, 101, 245);
+    padding: 30px 20px;
+    box-shadow: 3px 3px 10px rgb(101, 101, 245);
+    color: oldlace;
+}
+.footer
+{
+    background-color: rgb(101, 101, 245);
+    padding: 30px 20px;
+    box-shadow: 3px 3px 10px rgb(101, 101, 245);
+    color: oldlace;
+}
+
+.header h1{
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header img
+{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.plus-control-link
+{
+    color: white;
+    display: inline-block;
+    margin: 15px;
+}
+.plus-control-link.act 
+{
+    border-bottom: 2px solid yellow;
+}
+.plus-control-link:hover
+{
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+.main-content
+{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.nav-container
+{
+    float: right;
+    height: 70px;
+    padding: 20px 0;
+}
+.content{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section-title {
+    text-transform: uppercase;
+    padding: 15px 0px ;
+    font-weight: bold;
+    color: blue;
+    font-size:  30px;
+  }
+.course-card {
+    width: 250px;
+    margin-right:  20px;
+    display: inline-block;
+}
+.course-image
+{
+    height: 144px;
+    width: 100%;
+    background-image: url(./Untitled.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.course-content{
+    border: 1px solid #c3c3c3;
+    padding: 15px;
+}
+.course-name{
+    margin-bottom: 15px;
+}
+.course-teacher img{
+    vertical-align: middle;
+}
+.course-teacher span{
+    margin-left: 10px;
+}
+.course-price{
+    text-align: right;
+    color: red;
+    margin-top: 20px;
+}
+
+
+
+.page-title{
+    text-transform:  uppercase;
+    margin-bottom: 20px;
+}
+
+.teachers {
+    overflow: auto;
+    max-height: 500px;
+    width: 1140px;
+}
+.teachers .teacher {
+    height: 146px;
+    width: 500px;
+    border: violet solid 1px;
+    position: relative;
+    box-sizing: border-box;
+}
+.teachers .teacher .image-background {
+    width: 250px;
+    height: 144px;
+    background-image: url(./Mytam.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.teachers .teacher .course-num {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: black;
+    opacity: 0.5;
+    color: yellowgreen;
+}
+
+.teachers .teacher .teacher-info .name {
+    text-transform:  uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.teachers .teacher .teacher-info  .job-title {
+    font-size: 18px;
+    font-style:  italic;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.address {
+    width: 50%;
+    float: left;
+}
+
+.links ul  {
+   list-style-type: none;
+}
+ .links ul li {
+     margin-bottom: 5px;
+ }
+  
