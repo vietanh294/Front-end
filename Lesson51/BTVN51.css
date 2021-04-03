@@ -1,0 +1,342 @@
+*{
+
+    padding: 0;
+    margin:  0;
+    font-family: 'roboto' , sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.header {
+    background-color:  aqua;
+    padding: 15px 15px;
+}
+.header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-content .logo-container {
+    display: flex;
+    color: white;
+    align-items: center; 
+}
+.header .header-content .logo-container h1 {
+    margin-left: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+ .header .header-content .nav-container .nav-link  {
+    margin-left: 13px;
+    color: white;
+    font-size: 20px;
+ }
+ .header .header-content .nav-container .underline {
+     border-bottom:  1px solid   white;
+ }
+
+.banner-container {
+    background-image: url(./banner.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} 
+.banner-container .backdrop {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.banner-container .banner-content {
+    color: white;
+    z-index: 1;
+    text-transform: uppercase;
+
+}
+.banner-container .banner-content .register-now{
+    border: none;
+    background-color: lightseagreen;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.banner-container .banner-content  .register-now:hover{
+    background-color: orange;
+}
+.banner-container .banner-content h1{
+    box-sizing: border-box;   
+    color: white;
+    font-size: 30px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    animation-name: flydown;
+    animation-duration: 1s;
+}
+
+@keyframes flydown {
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+        font-size: 60px;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.main-content {
+    padding: 40px 0px;
+}
+.main-content .page-title {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-content .page-content {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-content .page-content::before {
+    content: " « ";
+    font-size: 40px;
+    color: teal;
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+
+.main-content .page-content:after {
+    content: " » ";
+    font-size: 40px;
+    color: teal;
+    position: absolute;
+    bottom:- 30px;
+    right: -30px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.cards .course-card {
+    width: 24%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: thistle;  
+    transition: all 1s;
+}
+.cards .course-card:hover {
+    box-shadow: 6px 6px 6px 6px grey;
+}
+.cards .course-card .course-image {
+    background-image: url(./abc.png);
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cards .course-card .course-content {
+    padding: 15px;
+}
+.cards .course-card .course-content .course-name {
+    margin-bottom: 15px;
+}
+.cards .course-card .course-content .course-teacher {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.cards .course-card .course-content .course-teacher img {
+    margin-right: 15px;
+}
+
+.cards .course-card .course-content .course-price {
+    text-align: right;
+    color: orangered;
+    font-size: 18px;
+}
+
+#our-teachers {
+    margin-bottom: 20px;
+}
+
+.teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.teachers .teacher {
+    width: 46%;
+    background-color: thistle;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: all 1s;
+}
+.teachers .teacher:hover {
+    box-shadow: 6px 6px 6px 6px grey;
+}
+
+.teachers .teacher .course-number {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+
+.teachers .teacher .image-background {
+    background-image: url(./my-tam-teacher.jpg);
+    height: 200px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.teachers .teacher .image-background:hover {
+    background-size: 150%;
+}
+.teachers .teacher .teacher-info {
+    padding: 20px;
+}
+.teachers .teacher .teacher-info .name {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.teachers .teacher .teacher-info .job-title {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.teachers .teacher .teacher-info .age {
+    font-weight: 450;
+}
+
+.contact-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+.contact-container .contact-image {
+    background-image: url(./Untitled.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 350px;
+    width: 48%;
+}
+.contact-container .contact-form {
+    width: 52%;
+    height: 350px;
+    padding: 20px 20px 20px 50px;
+    border: solid 1px  #cacaca;
+}
+.contact-container .contact-form .form-title {
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.contact-container .contact-form .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-container .contact-form .form-item label{
+    width: 180px;
+}
+
+.contact-container .contact-form .form-item input{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+.contact-container .contact-form  .register-now{
+    border: none;
+    background-color: lightseagreen;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    float: right;
+    transition: 0.5s;
+}
+.contact-container .contact-form  .register-now:hover{
+    background-color: orange;
+}
+
+
+
+footer {
+    background-color: aqua;
+    }
+.footer-container{
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-between;   
+    color: white;     
+}
+.footer-container .logo-adress {
+    width: 50%;
+}
+.footer-container .footer-links {
+    width: 50%;
+}
+.footer-container .footer-links  h3{
+    font-size: 20px;
+}
+.footer-container .footer-links ul{
+    list-style-type: none;
+}
+.footer-container .footer-links li{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
